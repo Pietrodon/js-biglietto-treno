@@ -18,25 +18,25 @@ let ticketPrice = numKm * 0.21 ;
 console.log(ticketPrice)
 
 // richiamo elemento html
-const htmlElement = document.getElementById('prezzo')
+const htmlElement = document.getElementById('prezzo');
 
 // calcolo e stampa sconto in base all'eta
 if (userAge < 18){
     let discount = ((ticketPrice * 20) / 100);
     let newTicketPrice = (ticketPrice - discount);
     newTicketPrice = newTicketPrice.toFixed(2);
-    console.log(newTicketPrice)
-    htmlElement.innerHTML +=(newTicketPrice)
+    console.log(newTicketPrice);
+    htmlElement.innerHTML +=(newTicketPrice);
 } else if(userAge > 65){
     let discount = ((ticketPrice * 40) / 100);
     let newTicketPrice = (ticketPrice - discount);
     newTicketPrice = newTicketPrice.toFixed(2);
-    console.log(newTicketPrice)
-    htmlElement.innerHTML +=(newTicketPrice)
+    console.log(newTicketPrice);
+    htmlElement.innerHTML +=(newTicketPrice);
 } else{
     ticketPrice = ticketPrice.toFixed(2);
-    console.log(ticketPrice)
-    htmlElement.innerHTML +=(ticketPrice)
+    console.log(ticketPrice);
+    htmlElement.innerHTML +=(ticketPrice);
 }
 
 
